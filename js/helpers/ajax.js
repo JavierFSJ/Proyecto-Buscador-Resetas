@@ -5,7 +5,7 @@ export function ajax(props) {
     .then(json => cdSuccess(json))
     .catch(err => {
       let message = err.statusText || 'Ocurrio un error';
-      const error = document.getElementById("error").innerHTML = `
+      document.getElementById("error").innerHTML = `
         <div class="alert alert-danger">
           <p>Error ${err.status} : ${message}</p>
         </div>
