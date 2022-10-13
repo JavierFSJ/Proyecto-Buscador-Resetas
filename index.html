@@ -30,7 +30,7 @@
 
     <main class="mt-5 container-lg">
         <h2 class="text-center fs-1">Inicio</h2>
-  
+        <div id="error"></div>
         <div class="d-md-flex justify-content-md-center mt-5 ">
             <form class="card col-md-8 bg-light p-5">
                 <div>
@@ -52,8 +52,11 @@
                     <h1 class="modal-title fs-3 font-bold" id="staticBackdropLabel"></h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body"></div>
-                <div class="modal-footer flex justify-content-between"></div>
+                <div class="modal-body" id="info"></div>
+                <div class="modal-footer flex justify-content-between">
+                    <button type="button" class="btn btn-danger col">Guadar Favorito</button>
+                    <button type="button" class="btn btn-secondary col" data-bs-dismiss="modal">Cerrar</button>
+                </div>
             </div>
         </div>
     </div>
@@ -72,6 +75,6 @@
   
 
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/app.js"></script>
+    <script src="js/app.js" type="module"></script>
 </body>
 </html>
